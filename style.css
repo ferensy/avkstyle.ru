@@ -1108,7 +1108,7 @@ span.price {
 	padding: 14px 0 0 10px;
 }
 
-.minus, .plus, .polzunok {
+.minus, .plus, .polzunok, .quontity  {
 	float: left;
 }
 .clear {
@@ -1116,7 +1116,52 @@ span.price {
 }
 .good-price {
 	font-size: 18px;
+	margin-top: 20px;
+	width: 250px;
+	text-align: center;
 }
 .good-price span {
 	color: #3dbfd9; 
+}
+.quontity  {
+	position: relative;
+}
+.quontity input {
+	width: 23px;
+	height: 38px;
+	border: 1px solid #d5d5d5;
+	padding: 0 15px;
+}
+input:focus, select:focus, button:focus{
+	outline: none;
+}
+select {
+	padding-left: 8px;
+}
+.quont {
+	padding: 25px 20px;
+}
+.edin {
+	position: absolute;
+	top: 10px;
+	left: 60px;
+	font-style: italic;
+	font-size: 14px;
+}
+.cartup {
+	width: 234px;
+	height: 40px;
+	background: #3dbfd9;
+	color: #fff;
+	border: 0;
+	text-transform: uppercase;
+	cursor: pointer;
+	font-size: 13px;
+	font-weight: bold;
+	float: right;
+	margin: 20px 55px 0 0;
+}
+
+.cartup:hover {
+	background: #484848;
 }
