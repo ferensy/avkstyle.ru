@@ -310,7 +310,7 @@ a.consultation{
 	vertical-align: middle;
 	font-weight: bold;
 	letter-spacing:1px;
-	
+
 }
 a.consultation:hover{
 	background: #484848;
@@ -440,7 +440,7 @@ button.dropbtn_catalogue:after{
 	margin-left: 429px;
 	*/
 	float:right;
-	
+
 }
 .dropdown, .dropdown_akcii {
 	position: relative;
@@ -689,6 +689,17 @@ h1{
 	background-repeat: repeat-x;
 	background-position: bottom;
 }
+/*Подвал для страницы "корзина"*/
+.footer_wrapper_cart {
+	min-width: 1200px;
+	/*margin: -254px auto 0;*/
+	height: 254px;
+	position: relative;
+	background: url(images/background_bottom_cart.png);
+	background-repeat: repeat-x;
+	background-position: bottom;
+}
+
 .footer_01{
 	height: 370px;
 	width: 1200px;
@@ -914,7 +925,7 @@ h1{
 }
 .single_article > ul  li{
 	margin-bottom: 10px;
-} 
+}
 .single_article > p > a{
 	text-decoration: none;
 	color: #3dbfd9;
@@ -1008,13 +1019,13 @@ td.td_art_1{
 
 .good-catalog-wraper {
 	width:900px;
-	overflow: hidden;	
+	overflow: hidden;
 }
 .googs-catalog {
 	width: 250px;
 	height: 238px;
 	background: #f2f2f2;
-	
+
 }
 .googs-catalog {
 	padding: 20px 20px 0 20px;
@@ -1049,7 +1060,7 @@ span.price {
 	text-align: center;
 	display:block;
 	margin:30px 0;
-	
+
 }
 .pagination a {
 	color: #3dbfd9;
@@ -1062,7 +1073,7 @@ span.price {
 .pagination li {
 	margin:0 5px;
 	display: inline;
-	
+
 }
 #activepage  {
 	background-color:#f2f2f2;
@@ -1121,7 +1132,7 @@ span.price {
 	text-align: center;
 }
 .good-price span {
-	color: #3dbfd9; 
+	color: #3dbfd9;
 }
 .quontity  {
 	position: relative;
@@ -1165,3 +1176,160 @@ select {
 .cartup:hover {
 	background: #484848;
 }
+
+/*Страница "КОРЗИНА"*/
+.cart_blocks{
+	width: 955px;
+	height: auto;
+	margin: 0 auto;
+}
+.cart_block1, .cart_block2{
+	float: left;
+	width: 100%;
+	margin-top: 45px;
+}
+.cart_heading{
+	text-align: center;
+	width: 955px;
+	margin: 0 auto;
+}
+.cart_heading h1, .cart_heading h2{
+	font-size: 30px;
+	text-transform: uppercase;
+}
+.cart_heading > p{
+	font-size: 14px;
+}
+table.cart_main{
+	width: 955px;
+	height: 405px;
+	margin: 0 auto;
+	margin-top: 25px;
+	color: #484848;
+	border-spacing: 0px;
+	border: 1px solid #d5d5d5;
+}
+table.cart_main tr td, table.summ tr td{
+	border: 1px solid #d5d5d5;
+}
+table.summ {
+	width: 430px;
+	height: 154px;
+	float: right;
+	margin-top: 40px;
+	color: #484848;
+	border-spacing: 0px;
+	border: 1px solid #d5d5d5;
+}
+tr.cart_row_headings{
+	height: 50px;
+}
+.cart_row_headings td span{
+	font-size: 13px;
+	text-transform: uppercase;
+	padding: 0 0 0 10px;
+}
+.cart_row_headings_goods td img, .cart_goods_descr{
+	float: left;
+}
+.cart_row_headings_goods td img{
+	padding: 0 0 0 44px;
+}
+.cart_goods_descr {
+	margin-left: 15px;
+}
+.cart_goods_descr p {
+	font-size: 11px;
+}
+.cart_goods_descr h2 {
+	font-size: 14px;
+	color: #3dbfd9;
+	line-height: 0;
+}
+.minus_plus{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	padding: 65px 0px 0px 50px;
+}
+a.renew{
+	position: absolute;
+	top: 120px;
+	left: 67px;
+	font-size: 14px;
+	color: #3dbfd9;
+	line-height: 0;
+	text-decoration: none;
+}
+a.renew:hover{
+	text-decoration: underline;
+}
+.price1, .price_all{
+	text-align: center;
+	font-size: 18px;
+}
+.delete_good{
+	width: 50px;
+}
+td.delete_good a img{
+ padding: 0 0 0 15px;
+}
+table.summ tr td{
+	width: 50%;
+	text-align: right;
+	padding-right: 10px;
+}
+table.summ tr td strong{
+	color:#474747;
+	font-size: 13px;
+}
+table.summ tr td span{
+	color:#000;
+	font-size: 14px;
+}
+.delivery{
+	width: 950px;
+	height: 222px;
+	margin: 0 auto;
+	border: 1px solid #d5d5d5;
+	margin-bottom: 50px;
+	margin-top: 10px;
+}
+table.delivery_info{
+	width: 850px;
+	height: 150px;
+	margin: 0 auto;
+	margin-top: 27px;
+}
+table.delivery_info tr td{
+	width: 393px;
+	height: 38px;
+	display: block;
+	margin-top: 15px;
+	float: left;
+}
+table.delivery_info tr td input{
+	height: 100%;
+	width: 100%;
+	border: 1px solid #d5d5d5;
+	font-size: 13px;
+	color: #484848;
+	padding: 0 0 0 15px;
+}
+button.cart_button {
+	width: 395px;
+	height: 38px;
+	background: #3dbfd9;
+	color: #fff;
+	border: 0;
+	text-transform: uppercase;
+	cursor: pointer;
+	font-size: 13px;
+	font-weight: bold;
+	float: right;
+  margin: 0px 0 40px 0;
+}
+button.cart_button:hover{
+	background: #484848;
+}
+/* /Страница "КОРЗИНА"*/

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
   	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  	<title>AVK Style</title>
+  	<title>Корзина</title>
   	<meta name="keywords" content="" />
   	<meta name="description" content="" />
   	<link rel="stylesheet" href="style.css" type="text/css" />
@@ -43,7 +43,7 @@
 
         <div class="header_block_main">
           <div class="logo_container">
-            <a href="index.html"><img src="images/logo.png" alt="AVK Style logo" /></a>
+            <a href="../index.html"><img src="images/logo.png" alt="AVK Style logo" /></a>
           </div>
           <div class="search_container">
             <form action="#">
@@ -80,8 +80,18 @@
 
         <div class="header_block_menu">
           <div class="dropdown_catalogue"><!-- DropDown меню каталога-->
-            <h3>Каталог продукции</h3>
-            <img src="images/list.png" alt="Каталог продукции" />
+
+              <h3>Каталог продукции</h3>
+              <img src="images/list.png" alt="Каталог продукции" />
+
+            <!-- <div id="myDropdown_catalogue" class="dropdown-content_catalogue">
+              <a href="#">Товар 1</a>
+              <a href="#">Товар 2</a>
+              <a href="#">Товар 3</a>
+              <a href="#">Товар 4</a>
+              <a href="#">Товар 5</a>
+              <a href="#">Товар 6</a>
+            </div> -->
           </div><!-- Конец DropDown меню каталога-->
           <div class="main_menu"><!-- Начало основного меню -->
 				<ul>
@@ -94,11 +104,12 @@
 							<p><a href="#">Установка противомоскитных сеток</a></p>
 						</div>
 					</li>
-						
+
 					<li><a href="#">Наши услуги</a></li>
 					<li><a href="#">Рассчитать стоимость</a></li>
 					<li><a href="#">Как выбрать</a></li>
 				</ul>
+
 		  </div>
         </div>
 
@@ -106,177 +117,191 @@
 
       	<div class="body_wrapper"> <!-- Тело сайта - НАЧАЛО-->
       		<div class="body_container"> <!-- Основной контейнер центр страницы-->
-      			<div class="body_content"> <!-- КОНТЕНТ СТРАНИЦЫ ИДЕТ СЮДА -->
-              <h1>Наши услуги</h1>
-              <div class="services_blockswrapper">
-                <div class="blockswrapper0_left">
-                  <div class="blockswrapper_picture">
-                    <img src="images/serv1.png" alt="Установка детских блокирующих замков BSL" />
-                  </div>
-                  <div class="blockswrapper_text">
-                    <a href="#">Установка детских блокирующих замков BSL на пластиковые окна</a>
-                  </div>
+
+            <div class="cart_blocks">
+              <div class="cart_block1">
+                <div class="cart_heading">
+                  <h1>Корзина покупок</h1>
                 </div>
-                <div class="blockswrapper0_right">
-                  <div class="blockswrapper_picture">
-                    <img src="images/serv2.png" alt="Остекление балконов и лоджий" />
-                  </div>
-                  <div class="blockswrapper_text">
-                    <a href="#">Остекление балконов и лоджий<br/> </a>
-                  </div>
-                </div>
-                <div class="blockswrapper0_left">
-                  <div class="blockswrapper_picture">
-                    <img src="images/serv3.png" alt="Установка противомоскитных сеток" />
-                  </div>
-                  <div class="blockswrapper_text">
-                    <a href="#">Установка противомоскитных сеток</a>
-                  </div>
-                </div>
-                <div class="blockswrapper0_right">
-                  <div class="blockswrapper_picture">
-                    <img src="images/serv4.png" alt="Замена фурнитуры на пластиковых окнах" />
-                  </div>
-                  <div class="blockswrapper_text">
-                    <a href="#">Замена фурнитуры на пластиковых окнах</a>
-                  </div>
-                </div>
+                <table class="cart_main">
+                  <tbody>
+                    <tr class="cart_row_headings">
+                      <td>
+                        <span>Название</span>
+                      </td>
+                      <td>
+                        <span>Количество</span>
+                      </td>
+                      <td>
+                        <span>Цена за шт.</span>
+                      </td>
+                      <td>
+                        <span>Всего</span>
+                      </td>
+                      <td>
+                        <span>&nbsp;</span>
+                      </td>
+                    </tr>
+                    <tr class="cart_row_headings_goods">
+                      <td width="448">
+                        <img src="images/cart_pic01.png" alt="" />
+                          <div class="cart_goods_descr">
+                            <h2>
+                              Чайная церемония
+                            </h2>
+                            <p>
+                              <strong>Цвет:</strong> белый
+                            </p>
+                            <p>
+                              <strong>Ширина:</strong> 150 см
+                            </p>
+                            <p>
+                              <strong>Высота:</strong> 220 см
+                            </p>
+                          </div>
+                      </td>
+                      <td width="204">
+      									<div class="minus_plus">
+      										<div class="minus"><a href="#">&ndash;</a></div>
+      										<div class="quontity">
+      											<form>
+      											  <input type="text" name="quontity" value="1" />
+      											</form>
+      										</div>
+      										<div class="plus"><a href="#">+</a></div>
+                            <a class="renew" href="#">Обновить</a>
+      									</div>
+      								</td>
+                      <td class="price1">
+                        <span>1 794 p.</span>
+                      </td>
+                      <td class="price_all">
+                        <span>3 588 p.</span>
+                      </td>
+                      <td class="delete_good">
+                        <a href="#"><img src="images/cart.png" alt="" /></a>
+                      </td>
+                    </tr>
+                    <tr class="cart_row_headings_goods">
+                      <td>
+                        <img src="images/cart_pic02.png" alt="" />
+                          <div class="cart_goods_descr">
+                            <h2>
+                              Аруба
+                            </h2>
+                            <p>
+                              <strong>Цвет:</strong> бежевый
+                            </p>
+                            <p>
+                              <strong>Ширина:</strong> 180 см
+                            </p>
+                            <p>
+                              <strong>Высота:</strong> 220 см
+                            </p>
+                          </div>
+                      </td>
+                      <td>
+                        <div class="minus_plus">
+      										<div class="minus"><a href="#">&ndash;</a></div>
+      										<div class="quontity">
+      											<form>
+      											  <input type="text" name="quontity" value="1" />
+      											</form>
+      										</div>
+      										<div class="plus"><a href="#">+</a></div>
+                            <a class="renew" href="#">Обновить</a>
+      									</div>
+      								</td>
+                      <td class="price1">
+                        <span>1 085 p.</span>
+                      </td>
+                      <td class="price_all">
+                        <span>3 255 p.</span>
+                      </td>
+                      <td class="delete_good">
+                        <a href="#"><img src="images/cart.png" alt="" /></a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <table class="summ">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <strong>Предварительная сумма :</strong>
+                      </td>
+                      <td>
+                        <span>6 843 р</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <strong>Скидка при заказе онлайн 7%:</strong>
+                      </td>
+                      <td>
+                        <span>479 р</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <strong>Предварительная сумма:</strong>
+                      </td>
+                      <td>
+                        <span>6 364 р</span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
-      			</div><!-- .content--><!-- КОНЕЦ СОДЕРЖИМОГО СТРАНИЦЫ -->
+
+              <div class="cart_block2">
+                <div class="cart_heading">
+                  <h1>Доставка</h1>
+                  <p align="justify">
+                    Наша производство находиться в Санкт-Петербурге, но вы можете заказать доставку в пределах Российской Федерации просто оставив
+                    информацию о себе у нас на сайте.
+                  </p>
+                </div>
+                <div class="delivery">
+                  <table class="delivery_info">
+                    <tbody>
+                      <tr>
+                        <td>
+                          <input type="text" placeholder="Контактное лицо">
+                        </td>
+                        <td style="margin-left:40px;">
+                          <input type="text" placeholder="Город">
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input type="text" placeholder="Email">
+                        </td>
+                        <td style="margin-left:40px;">
+                          <input type="text" placeholder="Улица, дом, квартира">
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input type="text" placeholder="Телефон">
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="cart_form_button">
+                  <button class="cart_button">ОФОРМЛЕНИЕ ЗАКАЗА</button>
+                </div>
+             </div>
+           </div>
+           
       		</div><!-- .container-->
-
-          <div class="left-sidebar"><!-- Дополнительный контейнер слева сайта-->
-            <div class="type1">
-              <p>Выберите тип жалюзи</p>
-            </div>
-            <div class="type_noborder">
-              <ul>
-                <li><a href="#">Вертикальные жалюзи</a></li>
-                <li><a href="#">Горизонтальные жалюзи</a></li>
-              </ul>
-            </div>
-            <div class="type1">
-              <p>Выберите тип штор</p>
-            </div>
-            <div class="type2_noborder">
-              <ul>
-                <li><a href="#">Рулонные шторы UNI-1</a></li>
-                <li><a href="#">Рулонные шторы UNI-2</a></li>
-                <li><a href="#">Рулонные шторы классические</a></li>
-                <li><a href="#">Рулонные шторы с пружинным механизмом</a></li>
-              </ul>
-            </div>
-            <div class="type3_coloured">
-              <span>Как правильно выбирать?</span>
-            </div>
-            <div class="type2_noborder">
-              <ul>
-                <li><a href="#">Установка вертикальных штор</a></li>
-                <li><a href="#">Что такое рулонные шторы и какими они бывают</a></li>
-                <li><a href="#">Особенности кассетных рулонных штор с пружинным механизмом</a></li>
-                <li><a href="#">Декоративность рулонных штор</a></li>
-                <li><a href="#">Эксплуатация наших изделий</a></li>
-              </ul>
-              <a class="more_txt" href="#">Все полезные статьи</a>
-            </div>
-      		</div><!-- .left-sidebar -->
       	</div><!-- .middle--> <!-- Тело сайта - КОНЕЦ-->
-
-        <div class="footer_services">
-          <div class="footer_service_wrapper">
-            <div class="footer_service_content">
-              <img src="images/truck_i.png" alt="" />
-              <span><strong>Доставка по всей России</strong>
-              <br />Быстро просто и надёжно</span>
-            </div>
-          </div>
-          <div class="footer_service_wrapper_mid">
-            <div class="footer_service_content">
-              <img src="images/tick_i.png" alt="" />
-              <span><strong>Гарантии и сертификаты</strong>
-              <br />Нормативные документы</span>
-            </div>
-          </div>
-          <div class="footer_service_wrapper_lst">
-            <div class="footer_service_content">
-              <img src="images/talking_i.png" alt="" />
-              <span><strong>Профессиональная консультация</strong>
-              <br />Оперативная помощь по телефону</span>
-            </div>
-          </div>
-        </div>
-        <div class="footer_welcome">
-          <div class="footer_welcome_txt">
-            <h2>Добро пожаловать на наш сайт!</h2>
-            <p>У нас Вы имеете возможность выбрать тип жалюзи и штор, а так же посчитать конечную цену
-            изделия. На нашем сайте реализована возможность выделить из всего многообразия расцветок
-            и фактур именно то, что Вас интересует. Вы можете отбирать изделия по типу, составу материала,
-            его фактуре, наличию перфорации и затемняющим свойствам.</p>
-            <p>По всем вопросам звоните по нашим контактным телефонам.</p>
-          </div>
-          <div class="footer_welcome_img">
-            <a href="#"><img src="images/logo2.png" alt="Собственное производство жалюзей АВК" /></a>
-          </div>
-        </div>
-
-        <div class="footer">
-          <div class="footer_main">
-            <div class="footer_links1">
-              <p class="footer_links_headers">Меню</p>
-              <ul>
-                <li><a href="index.html">На главную</a></li>
-                <li><a href="#">Акции</a></li>
-                <li><a href="#">Наши работы</a></li>
-                <li><a href="#">Рассчитать стоимость</a></li>
-                <li><a href="#">Как выбрать</a></li>
-                <li><a href="#">&nbsp;</a></li>
-                <li><a href="#">&nbsp;</a></li>
-              </ul>
-            </div>
-            <div class="footer_links2">
-              <p class="footer_links_headers">Каталог товаров</p>
-              <ul>
-                <li><a href="#">Вертикальные жалюзи</a></li>
-                <li><a href="#">Горизонтальные жалюзи</a></li>
-                <li><a href="#">Рулонные шторы классические</a></li>
-                <li><a href="#">Рулонные шторы UNI-1</a></li>
-                <li><a href="#">Рулонные шторы UNI-2</a></li>
-                <li><a href="#">Рулонные шторы с пружинным механизмом</a></li>
-                <li><a href="#">&nbsp;</a></li>
-              </ul>
-            </div>
-            <div class="footer_links1">
-              <p class="footer_links_headers">Информация</p>
-              <ul>
-                <li><a href="#">О компании</a></li>
-                <li><a href="#">Ремонт</a></li>
-                <li><a href="#">Доставка</a></li>
-                <li><a href="#">Оплата</a></li>
-                <li><a href="#">Как выбрать</a></li>
-                <li><a href="#">Гарантия и возврат</a></li>
-                <li><a href="#">Контакты</a></li>
-              </ul>
-            </div>
-            <div class="footer_links3">
-              <p class="footer_links_headers">Контакты</p>
-              <ul>
-                <li>г. Санкт-Петербург, Колпино, ул.Раумская д.2</li>
-                <li><a href="tel:+78129520617">+7 (812) 952-06-17</a></li>
-                <li><a href="mailto:oooavkstyle@gmail.com">oooavkstyle@gmail.com</a></li>
-                <li>пн. - пт. 9:30 - 20:00</li>
-                <li><a href="#">&nbsp;</a></li>
-                <li><a href="#">&nbsp;</a></li>
-              </ul>
-            </div>
-            <p class="copyright">
-              © 2016 Никакие права не защищены. Это жестокий мир, каждый сам за себя.
-            </p>
-          </div>
-        </div><!-- .footer -->
     </div><!-- .wrapper -->
 
-    <div class="footer_wrapper_main"></div>
-    <div id="scrollup"><img alt="Прокрутить вверх" src="images/up.png" /></div>
+    <div class="footer_wrapper_cart"></div>
+    <div id="scrollup"><img alt="Прокрутить вверх" src="images/up.png"></div>
 
   </body>
 </html>
